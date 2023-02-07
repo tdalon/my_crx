@@ -1,0 +1,36 @@
+{
+  "name": "My",
+  "description": "In the Omnibox, type 'm ' followed by TAB, then a Target keyword or full name <space> then a Id Keyword or full name <space> then your search term to instantly search.",
+  "version": "1.1",
+  "author": "Thierry Dalon",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "omnibox": { "keyword" : "m" },
+  "manifest_version": 2,
+  "permissions": ["tabs","contextMenus","clipboardWrite","https://*/*", "http://*/*"],
+  "browser_action": {
+    "default_icon": {
+      "16": "my_16.png",
+      "32": "my_32.png"
+      }
+  },
+  "icons": {
+    "16": "my_16.png",
+    "32": "my_32.png",
+    "48": "my_48.png",
+    "128": "my_128.png"
+  },
+  "commands": {
+    "share2teams" : {
+      "suggested_key": {
+           "default": "Alt+T" 
+      },
+      "description": "(Teams) Share Url"
+    } 
+  }
+
+}
+
+
